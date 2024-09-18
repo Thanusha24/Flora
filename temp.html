@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="google" content="notranslate">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<style type="text/css">
+<style>
+* {
+    box-sizing: border-box;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 35px;
+    font-family: Arial
+  padding: 30px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+.body1
+{    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    max-width: 800px; /* Max width */
+    padding: 20px;
+}
+
+
+/* Header/logo Title */
+.header {
+    font-size: 40px;
+    padding: 60px;
+    text-align: center;
+    background:#0000;
+    color:#00b300;
+	top:5px;
+	align:center;
+	height:18px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+	overflow:hidden;
+    display: flex;
+    background-color: #333;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: center;
+    font-size: 16px;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  left:10px;
+ 
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 35px;
+    left: 40%;
+	color: #f2f2f2;
+	font-family :cursive;
+	font-size: 35px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.fa:hover {
+    opacity: 0.7;
+	  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 80%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 80%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 80%;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 80%;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 80%;
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+ 		  <div class="navbar-brand navbar-header navbar-right-side col" href="#">
+			<img src="logo1.png" alt="logo" style="width:40px;"><a class="navbar-brand">FLORA<sub>Go Green!</sub><a>
+		  </div>
+</div>
+
+<!-- Navigation Bar -->
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">PLANTS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="flowers.html">FLOWERS</a>
+      <a href="fruits.html">FRUITS</a>
+      <a href="seeds.html">SEEDS</a>
+	  <a href="ready.html">READY TO GROW KITS</a>
+      <a href="herbs.html">HERBS</a>
+    </div>
+	</div>
+	 <a href="aboutus.html">ABOUT US</a>
+	 <a href="gallery.html">GALLERY</a>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="sl1.jpg" style="width:100%">
+  <div class="bottom-left">DECORATE YOUR LIFE WITH PLANTS</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="sl2.jpg" style="width:100%">
+  <div class="bottom-left">MAKE YOUR HOUSE A LIVING FOREST</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="sl3.jpg" style="width:90% height=90%">
+  <div class="bottom-left">LIVE WITH NATURE</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+      <h2>About Us</h2>
+      <h5>Photo of me:</h5>
+      <div><img src="nur1.jpg" style="width=20%"></div>
+      <p>Shop for a great range of native and exotic, rare, hard-to-find and endangered plants at the Growing Friends Nursery.
+	  The plants have been propagated by volunteers from the living collections in your Botanic Gardens:
+	  The Royal Botanic Garden Sydney, The Australian Botanic Garden Mount Annan and the Blue Mountains Botanic Garden Mount Tomah. 
+	  Create your own Botanic Garden, shop today! Foundation and Friends of the Botanic Gardens Members receive 20% off</p>
+  </div>
+  <div class="main">
+      <h2>OUR NURSERY</h2>
+
+      <div><img src="nur3.jpg" style="width=20%"></div>
+      <p>Our nursery, conveniently located in Koramangala,bangalore is open year-round to accommodate your native plant needs.
+	  We are constantly updating and increasing our inventory to meet the demands of our customers.
+	  We keep a reservoir of plants to be shipped and distributed as needs arise. We continue to plant and grow throughout 
+	  the year in anticipation of our customers’ needs. Our heated greenhouse spans half of an acre and we are always planting
+	  new crops to have a large inventory on hand. If you are interested in seeing what we have in stock or placing an order, 
+	  contact us or give us a call at 255252555.Out of town? We ship throughout the entire country,
+	  but primarily provide plants that flourish in the India
+      </p>
+      <br>
+      <h2>Our Practices</h2>
+      <div><img src="nur2.jpg" style="width=20%"></div>
+      <p>At Flora, growing and cultivating is a year-round process. 
+	  Our workers are regularly stratifying and planting new seeds in response to customer orders or to 
+	  start new contract grow projects for larger restoration projects. We pride ourselves on having a large and constantly 
+	  growing selection of native trees, native shrubs, and herbaceous native plants. Beyond our commitment to providing quality native plants, 
+	  we are devoted to seeking the provenance of all our plants. We currently have provenance available for over 75% of our inventory.</p>
+	  </div>
+	  </div>
+<!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge footer">
+  <h5>FOLLOW US ON</h5>
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  </p>
+</footer>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
